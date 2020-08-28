@@ -186,6 +186,7 @@ class SliverVariableSizeBoxAdaptorElement extends RenderObjectElement
     assert(child != null);
     assert(child.slot != null);
     assert(_childElements.containsKey(child.slot));
+	super.forgetChild(child);
     _childElements.remove(child.slot);
   }
 
