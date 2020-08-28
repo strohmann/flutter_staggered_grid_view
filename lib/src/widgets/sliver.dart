@@ -288,6 +288,7 @@ class SliverVariableSizeBoxAdaptorElement extends RenderObjectElement
   }
 
   @override
+  // ignore: must_call_super
   void insertChildRenderObject(covariant RenderObject child, int slot) {
     assert(slot != null);
     assert(_currentlyUpdatingChildIndex == slot);
@@ -302,6 +303,7 @@ class SliverVariableSizeBoxAdaptorElement extends RenderObjectElement
   }
 
   @override
+  // ignore: must_call_super
   void moveChildRenderObject(covariant RenderObject child, int slot) {
     // TODO(ianh): At some point we should be better about noticing when a
     // particular LocalKey changes slot, and handle moving the nodes around.
@@ -309,6 +311,7 @@ class SliverVariableSizeBoxAdaptorElement extends RenderObjectElement
   }
 
   @override
+  // ignore: must_call_super
   void removeChildRenderObject(covariant RenderObject child) {
     assert(_currentlyUpdatingChildIndex != null);
     renderObject.remove(_currentlyUpdatingChildIndex);
